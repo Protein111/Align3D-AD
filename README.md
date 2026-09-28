@@ -11,7 +11,7 @@ The overall framework of Align3D-AD is illustrated in the following figure.
 
 ## Qualitative Results
 
-![Qualitative Results](./Visualization%20_01.png)
+![Overall Pipeline](./Overall%20Pipeline_01.png)
 
 Qualitative comparisons on MVTec3D-AD and Eyecandies demonstrate the complementary strengths of rendering and RGB-aligned representations. Rendering features capture geometric and structural anomalies, while RGB-aligned features provide richer semantic cues for precise anomaly localization. Their integration yields more accurate and robust anomaly segmentation.
 
