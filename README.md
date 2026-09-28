@@ -7,4 +7,4 @@ Zero-shot 3D anomaly detection aims to identify anomalies in unseen categories w
 ## Overview
 The overall framework of Align3D-AD is illustrated in the following figure.
 
-[View the Overall Pipeline (PDF)](./Overall_Pipeline.pdf)
+![Overview](./Overall_Pipeline.png)
