@@ -20,3 +20,28 @@ Qualitative comparisons on MVTec3D-AD and Eyecandies demonstrate the complementa
 The datasets and pretrained model weights for Align3D-AD are available on [ModelScope](https://modelscope.cn/models/Bailt123/Align3D-AD).
 
 These resources are provided to facilitate reproducibility and further research.
+
+## How to Run
+
+Download the datasets and model weights from [ModelScope](https://modelscope.cn/models/Bailt123/Align3D-AD). Place the CLIP backbone at `pretrained_weights/ViT-L-14-336px.pt` and the model checkpoints under `Model_weights/<dataset>/<category>/weight/`.
+
+Run the following commands from the repository root:
+
+```bash
+# Configure the prepared dataset directory and GPU
+export DATA_ROOT="/path/to/datasets"
+export GPU_DEVICE=0
+
+# Train on an auxiliary category and evaluate
+bash train_bash/train_mvtec_cookie.sh
+
+# Evaluate pretrained models
+bash test_bash/test_mvtec.sh
+bash test_bash/test_eyecandies.sh
+
+# Cross-dataset evaluation
+bash test_bash/test_cross_dataset.sh
+bash test_bash/test_cross_dataset_only_point.sh
+```
+
+Additional category-specific scripts are available in `train_bash/` and `test_bash/`. Evaluation metrics are saved alongside the model checkpoints, and logs are stored in `results/`.
