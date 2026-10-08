@@ -19,7 +19,9 @@ Qualitative comparisons on MVTec3D-AD and Eyecandies demonstrate the complementa
 
 The datasets and pretrained model weights for Align3D-AD are available on [ModelScope](https://modelscope.cn/models/Bailt123/Align3D-AD).
 
-These resources are provided to facilitate reproducibility and further research.
+Download the OpenAI pretrained CLIP weights: [ViT-L-14-336px.pt](https://openaipublic.azureedge.net/clip/models/3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02/ViT-L-14-336px.pt).
+
+Place the downloaded file at `./pretrained_weights/ViT-L-14-336px.pt`.
 
 ## How to Run
 
@@ -45,3 +47,10 @@ bash test_bash/test_cross_dataset_only_point.sh
 ```
 
 Additional category-specific scripts are available in `train_bash/` and `test_bash/`. Evaluation metrics are saved alongside the model checkpoints, and logs are stored in `results/`.
+
+## Acknowledgements
+
+We thank the authors of [PointAD](https://github.com/zqhang/PointAD) and [AnomalyCLIP](https://github.com/zqhang/AnomalyCLIP) for making their code publicly available.
+
+
+
