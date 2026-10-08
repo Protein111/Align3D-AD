@@ -15,4 +15,8 @@ The overall framework of Align3D-AD is illustrated in the following figure.
 
 Qualitative comparisons on MVTec3D-AD and Eyecandies demonstrate the complementary strengths of rendering and RGB-aligned representations. Rendering features capture geometric and structural anomalies, while RGB-aligned features provide richer semantic cues for precise anomaly localization. Their integration yields more accurate and robust anomaly segmentation.
 
+## Dataset and Pretrained Weights
 
+The datasets and pretrained model weights for Align3D-AD are available on [ModelScope](https://modelscope.cn/models/Bailt123/Align3D-AD).
+
+These resources are provided to facilitate reproducibility and further research.
